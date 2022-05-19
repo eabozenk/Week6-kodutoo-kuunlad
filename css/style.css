@@ -1,0 +1,241 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {    
+    text-align: center;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    background-image: url('../img/candle1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    clip-path: polygon(52% 10%, 100% 0, 100% 43%, 97% 80%, 64% 97%, 32% 100%, 0 100%, 0% 43%, 0 0);
+}
+
+.intro-image__text a {
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    display: block;
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }  
+}
+
+.intro-image__link a {
+    background-color: #cbb4a56e;
+    border: 2px solid #cbb4a5;
+    color: #33352e;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;    
+    transition: all 1s ease-in-out;
+}
+
+.intro-image__link a:hover {
+    transform: scale(1.2);
+}
+
+.intro-text {
+    background-color: #6a6562;
+    color: #e0e3e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    padding: 0 15rem;
+}
+
+.intro-text__textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.packaging-image {
+    background-attachment: fixed;
+    background-image: url('../img/packaging2.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.packaging-image__text a {
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    display: block;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }  
+}
+
+.packaging-image__link a {
+    background-color: #cbb4a56e;
+    border: 2px solid #cbb4a5;
+    color: #251a16;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;    
+}
+
+.packaging-image__link a:hover {
+    transform: scale(1.2);
+}
+
+.packaging-text {
+    background-color: #604a4080;
+    color: #251a16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    padding: 0 15rem;
+}
+
+.packaging_text__textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.tutorials-image {
+    background-attachment: fixed;
+    background-image: url('../img/tutorial3.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.tutorials-image__text a {
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    display: block;
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }  
+}  
+
+.tutorials-image__link a {
+    background-color: #cbb4a56e;
+    border: 2px solid #cbb4a5;
+    color: #251a16;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;    
+}
+
+.tutorials-image__link a:hover {
+    transform: scale(1.2);
+}
+
+.tutorials-text {
+    background-color: #c57740;
+    color: silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    padding: 0 15rem;
+    text-transform: uppercase;    
+}
+
+.tutorials-text__textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    height: 200px;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    padding: 2rem;   
+    background-color: gold;     
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a {
+    text-decoration: none;
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    color: pink;
+    transform: scale(1.2);
+}
